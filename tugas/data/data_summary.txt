@@ -1,0 +1,54 @@
+================================================================================
+DATA SUMMARY - Periplus Books Dataset
+================================================================================
+
+Generated: 2026-07-19 16:37:09
+
+Total Records: 1328
+Total Columns: 23
+
+================================================================================
+DESCRIPTIVE STATISTICS
+================================================================================
+
+                                                        title author    binding     in_stock              category                                                                      product_url     price_idr  original_price_idr  discount_percent          isbn          publisher publication_date        pages language       weight  review_count  publication_year     book_age  price_per_page  popularity_score  is_new_release price_category  has_discount
+count                                                    1328   1328       1328  1328.000000                  1328                                                                             1328  1.328000e+03        1.328000e+03       1328.000000  1.327000e+03               1328             1327  1327.000000     1328  1327.000000   1328.000000        758.000000  1328.000000     1252.000000       1328.000000     1328.000000           1328   1328.000000
+unique                                                   1301    965          4          NaN                     8                                                                             1328           NaN                 NaN               NaN           NaN                390              467          NaN        4          NaN           NaN               NaN          NaN             NaN               NaN             NaN              4           NaN
+top     The Husky and His White Cat Shizun: Erha He Ta de ...      -  Paperback          NaN  Business & Self-Help  http://www.periplus.com/p/9781786583239/days-at-the-morisaki-bookshop?path=1_32           NaN                 NaN               NaN           NaN  Tuttle Publishing                -          NaN  English          NaN           NaN               NaN          NaN             NaN               NaN             NaN        Premium           NaN
+freq                                                        3     54        879          NaN                   191                                                                                1           NaN                 NaN               NaN           NaN                 97              569          NaN     1011          NaN           NaN               NaN          NaN             NaN               NaN             NaN            468           NaN
+mean                                                      NaN    NaN        NaN     0.591114                   NaN                                                                              NaN  3.903460e+05        4.192176e+05          7.749247  9.778062e+12                NaN              NaN   259.157498      NaN     0.479894      0.307229       2021.073879     2.382530     2746.876949          0.331890        0.323795            NaN      0.228916
+std                                                       NaN    NaN        NaN     0.491813                   NaN                                                                              NaN  3.653414e+05        3.612411e+05         17.574462  1.585104e+11                NaN              NaN   169.801104      NaN     0.416090      1.011855          6.906802     5.985267     6539.490302          1.088613        0.468099            NaN      0.420293
+min                                                       NaN    NaN        NaN     0.000000                   NaN                                                                              NaN  2.940000e+04        7.800000e+04          0.000000  4.010071e+12                NaN              NaN     0.000000      NaN     0.000000      0.000000       1961.000000    -1.000000      153.645833          0.000000        0.000000            NaN      0.000000
+25%                                                       NaN    NaN        NaN     0.000000                   NaN                                                                              NaN  2.250000e+05        2.500000e+05          0.000000  9.780702e+12                NaN              NaN   147.000000      NaN     0.250000      0.000000       2020.000000    -1.000000      876.008065          0.000000        0.000000            NaN      0.000000
+50%                                                       NaN    NaN        NaN     1.000000                   NaN                                                                              NaN  3.003000e+05        3.410000e+05          0.000000  9.781501e+12                NaN              NaN   240.000000      NaN     0.360000      0.000000       2024.000000     1.000000     1344.994666          0.000000        0.000000            NaN      0.000000
+75%                                                       NaN    NaN        NaN     1.000000                   NaN                                                                              NaN  4.460000e+05        4.567500e+05          0.000000  9.781805e+12                NaN              NaN   352.000000      NaN     0.570000      0.000000       2025.000000     2.000000     2193.750000          0.000000        1.000000            NaN      0.000000
+max                                                       NaN    NaN        NaN     1.000000                   NaN                                                                              NaN  8.413000e+06        8.413000e+06         92.000000  9.798896e+12                NaN              NaN  1472.000000      NaN     4.130000     20.000000       2026.000000    65.000000   155100.000000         20.000000        1.000000            NaN      1.000000
+
+================================================================================
+MISSING VALUES
+================================================================================
+
+                    Missing Count  Missing Percentage
+title                           0                0.00
+author                          0                0.00
+binding                         0                0.00
+in_stock                        0                0.00
+category                        0                0.00
+product_url                     0                0.00
+price_idr                       0                0.00
+original_price_idr              0                0.00
+discount_percent                0                0.00
+isbn                            1                0.08
+publisher                       0                0.00
+publication_date                1                0.08
+pages                           1                0.08
+language                        0                0.00
+weight                          1                0.08
+review_count                    0                0.00
+publication_year              570               42.92
+book_age                        0                0.00
+price_per_page                 76                5.72
+popularity_score                0                0.00
+is_new_release                  0                0.00
+price_category                  0                0.00
+has_discount                    0                0.00
