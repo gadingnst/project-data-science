@@ -61,7 +61,7 @@ Data dikumpulkan melalui proses web scraping dari situs Periplus.com menggunakan
 1. **Scraping halaman katalog:** Mengambil informasi dasar produk dari halaman listing per kategori (judul, penulis, harga, binding, status stok).
 2. **Scraping halaman detail:** Mengambil informasi tambahan dari halaman individual setiap produk (ISBN, penerbit, jumlah halaman, berat, tanggal terbit, jumlah review).
 
-Scraping dilakukan terhadap 8 kategori buku dengan masing-masing 8 halaman per kategori, menghasilkan total 1.520 baris data mentah.
+Scraping dilakukan terhadap 8 kategori buku dengan masing-masing 8 halaman per kategori, menghasilkan total 1.514 baris data mentah.
 
 **Kategori yang di-scrape:**
 

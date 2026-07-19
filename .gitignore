@@ -11,3 +11,4 @@ __pycache__/
 
 # Dataset lokal (opsional jika ingin di-ignore, tapi di UTS ini dataset raw & clean tetap di-commit agar dosen bisa langsung lihat)
 # data/*.csv
+.DS_Store
