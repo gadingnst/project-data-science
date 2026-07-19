@@ -137,11 +137,11 @@ Total dataset akhir: **1.322 baris x 23 kolom**.
 
 | Statistik | Harga (Rp) | Halaman | Berat (kg) | Review |
 |-----------|-----------|---------|------------|--------|
-| Mean | 376.616 | 258 | 0,48 | 0,30 |
+| Mean | 376.616 | 258 | 0,47 | 0,31 |
 | Median | 299.000 | 240 | 0,36 | 0 |
 | Std Dev | 263.249 | 169 | 0,41 | 1,01 |
 | Min | 29.400 | 0 | 0 | 0 |
-| Max | 1.975.000 | 1.472 | 4,13 | 20 |
+| Max | 1.975.000 | 1.472 | 3,95 | 20 |
 
 ![Distribusi Kategori](plots/1_distribusi_kategori.png)
 *Gambar 1. Distribusi Buku per Kategori*
