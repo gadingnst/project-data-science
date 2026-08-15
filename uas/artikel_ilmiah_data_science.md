@@ -70,7 +70,7 @@ Manajemen data dilakukan untuk memastikan kualitas (*data quality*) dan integrit
 ### 2.4 Analisis Data & Pemodelan Machine Learning
 1. **Analisis Korelasi Pearson:** Menghitung koefisien korelasi $r$ untuk mengukur kekuatan dan arah hubungan linier antar variabel numerik:
    $$r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i - \bar{y})^2}}$$
-2. **Analisis Regresi Linier Berganda:** Memprediksi harga jual bersih ($Y = \text{price\_idr}$) berdasarkan harga asli ($X_1 = \text{original\_price\_idr}$) dan tingkat diskon ($X_2 = \text{discount\_percent}$):
+2. **Analisis Regresi Linier Berganda:** Memprediksi harga jual bersih ($Y = \text{Price}$) berdasarkan harga asli ($X_1 = \text{OriginalPrice}$) dan tingkat diskon ($X_2 = \text{DiscountPercent}$):
    $$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \epsilon$$
 3. **Clustering k-Means:** Mengelompokkan katalog produk ke dalam $k=3$ kluster berdasarkan fitur harga jual bersih dan persentase diskon. Evaluasi jumlah kluster dilakukan dengan analisis nilai *Silhouette Score*.
 4. **Klasifikasi Decision Tree:** Menguji tingkat kepastian dalam memprediksi kategori buku atau kelas harga berdasarkan fitur-fitur numerik yang ada.
@@ -113,7 +113,7 @@ Pengujian korelasi Pearson dilakukan untuk memahami interaksi antar variabel har
 ### 3.3 Pemodelan Analisis Regresi Linier
 Model regresi linier berganda dibangun untuk mengukur seberapa presisi harga jual bersih dapat diprediksi dari harga asli dan persentase diskon. Persamaan regresi yang dihasilkan adalah:
 
-$$\text{Price\_IDR} = 14.250 + (0,892 \times \text{Original\_Price\_IDR}) - (2.150 \times \text{Discount\_Percent})$$
+$$\text{Price} = 14.250 + (0,892 \times \text{OriginalPrice}) - (2.150 \times \text{DiscountPercent})$$
 
 - **Koefisien Determinasi ($R^2$):** $0,874$ (87,4% variansi harga jual dapat dijelaskan oleh kombinasi harga asli dan diskon).
 - **Interpretasi:** Setiap kenaikan harga asli sebesar Rp 1.000 akan meningkatkan harga jual sebesar Rp 892 (setelah memperhitungkan margin dan pajak rata-rata). Setiap kenaikan diskon 1% mengurangi harga jual bersih rata-rata sebesar Rp 2.150.
@@ -135,7 +135,7 @@ Segmentasi ini memberikan panduan strategis bagi tim *merchandising* e-commerce 
 Menggunakan algoritma *Decision Tree Classifier*, sistem diuji untuk mengklasifikasikan produk ke dalam segmen harga (*Low*, *Medium*, *High*) berdasarkan atribut `original_price_idr`, `discount_percent`, dan `in_stock`. Model ini mencapai akurasi evaluasi sebesar **89,2%** pada *test dataset*, menunjukkan bahwa atribut harga asli dan diskon merupakan pemisah utama dalam hirarki segmen pasar buku impor.
 
 ### 3.6 Perkembangan Big Data dan Manfaat bagi Pengguna
-Perkembangan teknologi *Big Data* dalam konteks e-commerce tidak lagi sekadar menangani volume data yang besar (*Volume*), melainkan juga kecepatan pemrosesan (*Velocity*), keberagaman format (*Variety*), dan kebenaran data (*Veracity*). 
+Perkembangan teknologi *Big Data* dalam konteks e-commerce tidak lagi sekadar menangani volume data meledak (*Volume*), melainkan juga kecepatan pemrosesan (*Velocity*), keberagaman format (*Variety*), dan kebenaran data (*Veracity*). 
 
 **Manfaat Konkret bagi Pengguna (Konsumen & Pengelola):**
 1. **Bagi Konsumen (Pembeli Buku):**
