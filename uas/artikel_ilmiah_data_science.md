@@ -12,7 +12,7 @@ NIM Penulis: 1) 250401020159, 2) 250401020151
 ---
 
 ## ABSTRAK
-Pertumbuhan pesat e-commerce ritel buku di Indonesia memicu tantangan besar dalam pengelolaan inventaris, penentuan strategi penetapan harga (*pricing strategy*), dan segmentasi produk impor. Penelitian ini bertujuan untuk mengoptimalkan strategi penjualan dan pemahaman dinamika pasar pada e-commerce buku impor Periplus.com dengan menerapkan siklus data science secara komprehensif. Metodologi penelitian mencakup *data acquisition* melalui teknik *web scraping* terhadap 593 item produk dari 5 kategori utama, dilanjutkan dengan tahap *data cleaning* dan *data management*. Selanjutnya, dilakukan analisis korelasi Pearson dan analisis regresi linier berganda untuk menguji pengaruh harga asli (*original price*) dan tingkat diskon terhadap harga jual bersih. Untuk segmentasi pasar dan pengelompokan produk, diterapkan teknik *unsupervised learning* (Clustering k-Means) serta *supervised learning* (Klasifikasi *Decision Tree* dan *Random Forest*). Hasil analisis korelasi menunjukkan hubungan positif yang sangat kuat antara harga asli dan harga jual bersih ($r = 0,935$), sementara diskon memiliki korelasi negatif sedang ($r = -0,294$). Model regresi linier menghasilkan koefisien determinasi ($R^2 = 0,874$), yang menunjukkan keberhasilan tinggi dalam memprediksi harga jual. Pengelompokan *k-Means* membagi katalog produk menjadi tiga kluster utama: produk *Economy/Budget*, *Mid-Range Standard*, dan *Premium Collector Edition*. Integrasi analisis ini memberikan kontribusi nyata bagi manajemen e-commerce dalam efisiensi pengelolaan inventaris, presisi penentuan harga promosi, dan pemanfaatan *big data analytics* untuk peningkatan kepuasan serta daya beli konsumen.
+Pertumbuhan pesat e-commerce ritel buku di Indonesia memicu tantangan besar dalam pengelolaan inventaris, penentuan strategi penetapan harga (*pricing strategy*), dan segmentasi produk impor. Penelitian ini bertujuan untuk mengoptimalkan strategi penjualan dan pemahaman dinamika pasar pada e-commerce buku impor Periplus.com dengan menerapkan siklus data science secara komprehensif. Metodologi penelitian mencakup *data acquisition* melalui teknik *web scraping* terhadap 593 item produk dari 5 kategori utama, dilanjutkan dengan tahap *data cleaning* dan *data management*. Selanjutnya, dilakukan analisis korelasi Pearson dan analisis regresi linier berganda untuk menguji pengaruh harga asli (*original price*) dan tingkat diskon terhadap harga jual bersih. Untuk segmentasi pasar dan pengelompokan produk, diterapkan teknik *unsupervised learning* (Clustering k-Means) serta *supervised learning* (Klasifikasi *Decision Tree* dan *Random Forest*). Hasil analisis korelasi menunjukkan hubungan positif yang sangat kuat antara harga asli dan harga jual bersih ($r = 0,935$), sementara diskon memiliki korelasi negatif sedang ($r = -0,294$). Model regresi linier menghasilkan koefisien determinasi ($R^2 = 0,874$), yang menunjukkan keberhasilan tinggi dalam memprediksi harga jual. Pengelompokan *k-Means* membagi katalog produk menjadi tiga kluster utama: produk *Economy/Budget*, *Mid-Range Standard*, and *Premium Collector Edition*. Integrasi analisis ini memberikan kontribusi nyata bagi manajemen e-commerce dalam efisiensi pengelolaan inventaris, presisi penentuan harga promosi, dan pemanfaatan *big data analytics* untuk peningkatan kepuasan serta daya beli konsumen.
 
 **Kata kunci:** Data Science, E-Commerce, Periplus, Regresi Linier, Clustering k-Means, Manajemen Data, Big Data Analytics.
 
@@ -44,19 +44,8 @@ Penelitian ini menggunakan studi kasus e-commerce Periplus.com dengan tujuan:
 ### 2.1 Alur Penelitian
 Metodologi dalam penelitian ini dirancang mengacu pada standar proses *Cross-Industry Standard Process for Data Mining* (CRISP-DM), yang terdiri dari 6 tahapan utama yang diilustrasikan pada Gambar 1.
 
-```
-+------------------+     +--------------------+     +---------------------+
-| 1. Business      | --> | 2. Data            | --> | 3. Data Preparation |
-|    Understanding |     |    Acquisition     |     |    & Management     |
-+------------------+     +--------------------+     +---------------------+
-                                                               |
-+------------------+     +--------------------+                v
-| 6. Deployment &  | <-- | 5. Evaluation &    | <-- +---------------------+
-|    Business Value|     |    Insight         |     | 4. Modeling &       |
-+------------------+     +--------------------+     |    Analytics        |
-                                                    +---------------------+
-```
-*Gambar 1. Alur Siklus Data Science Penelitian*
+![Alur Siklus Data Science Penelitian CRISP-DM](crisp_dm.svg)  
+*Gambar 1. Alur Siklus Data Science Penelitian berbasis CRISP-DM*
 
 ### 2.2 Pengumpulan Data (*Data Acquisition*)
 Data dikumpulkan dari website resmi Periplus.com menggunakan teknik *automated web scraping* berbasis bahasa pemrosesan Python dengan modul `requests` dan `BeautifulSoup`. Proses scraping dilakukan pada 5 kategori buku utama: *Fiction*, *Non-Fiction*, *Business & Economics*, *Children & Young Adult*, serta *Comics & Graphic Novels*. Total data mentah yang berhasil diekstraksi adalah 593 rekaman produk dengan atribut: `title`, `author`, `binding`, `in_stock`, `category`, `product_url`, `price_idr`, `original_price_idr`, dan `discount_percent`.
