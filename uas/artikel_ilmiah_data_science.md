@@ -12,14 +12,14 @@ NIM Penulis: 1) 250401020159, 2) 250401020151
 ---
 
 ## ABSTRAK
-Pertumbuhan pesat e-commerce ritel buku di Indonesia memicu tantangan besar dalam pengelolaan inventaris, penentuan strategi penetapan harga (*pricing strategy*), dan segmentasi produk impor. Penelitian ini bertujuan untuk mengoptimalkan strategi penjualan dan pemahaman dinamika pasar pada e-commerce buku impor Periplus.com dengan menerapkan siklus data science secara komprehensif. Metodologi penelitian mencakup *data acquisition* melalui teknik *web scraping* terhadap 593 item produk dari 5 kategori utama, dilanjutkan dengan tahap *data cleaning* dan *data management*. Selanjutnya, dilakukan analisis korelasi Pearson dan analisis regresi linier berganda untuk menguji pengaruh harga asli (*original price*) dan tingkat diskon terhadap harga jual bersih. Untuk segmentasi pasar dan pengelompokan produk, diterapkan teknik *unsupervised learning* (Clustering k-Means) serta *supervised learning* (Klasifikasi *Decision Tree* dan *Random Forest*). Hasil analisis korelasi menunjukkan hubungan positif yang sangat kuat antara harga asli dan harga jual bersih ($r = 0,935$), sementara diskon memiliki korelasi negatif sedang ($r = -0,294$). Model regresi linier menghasilkan koefisien determinasi ($R^2 = 0,874$), yang menunjukkan keberhasilan tinggi dalam memprediksi harga jual. Pengelompokan *k-Means* membagi katalog produk menjadi tiga kluster utama: produk *Economy/Budget*, *Mid-Range Standard*, dan *Premium Collector Edition*. Integrasi analisis ini memberikan kontribusi nyata bagi manajemen e-commerce dalam efisiensi pengelolaan inventaris, presisi penentuan harga promosi, dan pemanfaatan *big data analytics* untuk peningkatan kepuasan serta daya beli konsumen.
+Pertumbuhan pesat e-commerce ritel buku di Indonesia memicu tantangan besar dalam pengelolaan inventaris, penentuan strategi penetapan harga (*pricing strategy*), dan segmentasi produk impor. Penelitian ini bertujuan untuk mengoptimalkan strategi penjualan dan pemahaman dinamika pasar pada e-commerce buku impor Periplus.com dengan menerapkan siklus data science secara komprehensif. Metodologi penelitian mencakup *data acquisition* melalui teknik *web scraping* terhadap 1.322 item produk dari 8 kategori utama, dilanjutkan dengan tahap *data cleaning* dan *data management*. Selanjutnya, dilakukan analisis korelasi Pearson dan analisis regresi linier berganda untuk menguji pengaruh harga asli (*original price*) dan tingkat diskon terhadap harga jual bersih. Untuk segmentasi pasar dan pengelompokan produk, diterapkan teknik *unsupervised learning* (Clustering k-Means) serta *supervised learning* (Klasifikasi *Decision Tree* dan *Random Forest*). Hasil analisis korelasi menunjukkan hubungan positif yang sangat kuat antara harga asli dan harga jual bersih ($r = 0,962$), sementara diskon memiliki korelasi negatif sedang ($r = -0,307$). Model regresi linier menghasilkan koefisien determinasi ($R^2 = 0,990$), yang menunjukkan keberhasilan sangat tinggi dalam memprediksi harga jual. Pengelompokan *k-Means* membagi katalog produk menjadi tiga kluster utama: produk *Budget & Promo*, *Standard Regular*, dan *Premium Collector*. Integrasi analisis ini memberikan kontribusi nyata bagi manajemen e-commerce dalam efisiensi pengelolaan inventaris, presisi penentuan harga promosi, dan pemanfaatan *big data analytics* untuk peningkatan kepuasan serta daya beli konsumen.
 
 **Kata kunci:** Data Science, E-Commerce, Periplus, Regresi Linier, Clustering k-Means, Manajemen Data, Big Data Analytics.
 
 ---
 
 ## ABSTRACT
-*The rapid growth of book retail e-commerce in Indonesia poses significant challenges in inventory management, pricing strategies, and product segmentation for imported titles. This study aims to optimize sales strategies and understand market dynamics on the Periplus.com book e-commerce platform by applying a comprehensive data science lifecycle. The research methodology encompasses data acquisition via web scraping on 593 product items across 5 main categories, followed by data cleaning and structured data management. Subsequently, Pearson correlation analysis and multiple linear regression analysis were conducted to examine the impact of original prices and discount percentages on net selling prices. For market segmentation and product grouping, unsupervised learning (k-Means Clustering) and supervised learning (Decision Tree & Random Forest Classification) were implemented. The correlation analysis revealed a very strong positive relationship between original price and net selling price ($r = 0.935$), whereas discount percentages exhibited a moderate negative correlation ($r = -0.294$). The linear regression model yielded a coefficient of determination ($R^2 = 0.874$), indicating high predictive accuracy for final selling prices. The k-Means clustering successfully segmented the catalog into three distinct clusters: Economy/Budget, Mid-Range Standard, and Premium Collector Edition. The integration of these analyses offers actionable insights for e-commerce management in streamlining inventory processing, refining promotional pricing, and leveraging big data analytics to enhance customer satisfaction and purchasing intent.*
+*The rapid growth of book retail e-commerce in Indonesia poses significant challenges in inventory management, pricing strategies, and product segmentation for imported titles. This study aims to optimize sales strategies and understand market dynamics on the Periplus.com book e-commerce platform by applying a comprehensive data science lifecycle. The research methodology encompasses data acquisition via web scraping on 1,322 product items across 8 main categories, followed by data cleaning and structured data management. Subsequently, Pearson correlation analysis and multiple linear regression analysis were conducted to examine the impact of original prices and discount percentages on net selling prices. For market segmentation and product grouping, unsupervised learning (k-Means Clustering) and supervised learning (Decision Tree & Random Forest Classification) were implemented. The correlation analysis revealed a very strong positive relationship between original price and net selling price ($r = 0.962$), whereas discount percentages exhibited a moderate negative correlation ($r = -0.307$). The linear regression model yielded a coefficient of determination ($R^2 = 0.990$), indicating very high predictive accuracy for final selling prices. The k-Means clustering successfully segmented the catalog into three distinct clusters: Budget & Promo, Standard Regular, and Premium Collector. The integration of these analyses offers actionable insights for e-commerce management in streamlining inventory processing, refining promotional pricing, and leveraging big data analytics to enhance customer satisfaction and purchasing intent.*
 
 **Keywords:** Data Science, E-Commerce, Periplus, Linear Regression, k-Means Clustering, Data Management, Big Data Analytics.
 
@@ -54,15 +54,15 @@ Metodologi dalam penelitian ini dirancang mengacu pada standar proses *Cross-Ind
 Tahapan CRISP-DM yang diterapkan dalam penelitian ini meliputi: (1) *Business Understanding*, yaitu pemahaman konteks bisnis e-commerce buku impor dan identifikasi permasalahan strategis; (2) *Data Acquisition*, yaitu pengumpulan data produk melalui teknik *web scraping* otomatis; (3) *Data Preparation & Management*, meliputi pembersihan, transformasi, dan validasi data; (4) *Modeling & Analytics*, yaitu penerapan model statistik dan algoritma *machine learning*; (5) *Evaluation & Insight*, yaitu evaluasi performa model dan ekstraksi wawasan bisnis; serta (6) *Deployment & Business Value*, yaitu implementasi hasil analisis untuk pengambilan keputusan bisnis yang terukur.
 
 ### 2.2 Pengumpulan Data (*Data Acquisition*)
-Data dikumpulkan dari website resmi Periplus.com menggunakan teknik *automated web scraping* berbasis bahasa pemrosesan Python dengan modul *requests* dan *BeautifulSoup*. Proses scraping dilakukan pada 5 kategori buku utama: *Fiction*, *Non-Fiction*, *Business & Economics*, *Children & Young Adult*, serta *Comics & Graphic Novels*. Total data mentah yang berhasil diekstraksi adalah 593 rekaman produk.
+Data dikumpulkan dari website resmi Periplus.com menggunakan teknik *automated web scraping* berbasis bahasa pemrosesan Python dengan modul *requests* dan *BeautifulSoup*. Proses scraping dilakukan pada 8 kategori buku utama: *Fiction & Literature*, *Business & Self-Help*, *Children's Books*, *Computer & IT*, *Biographies & Memoirs*, *Arts & Photography*, *Cooking & Food*, serta *Health & Fitness*. Total data mentah yang berhasil diekstraksi adalah 1.514 rekaman produk, yang kemudian melalui proses pembersihan menjadi 1.322 rekaman bersih.
 
-Setiap rekaman produk memuat atribut-atribut berikut: *title* (judul buku), *author* (nama pengarang), *binding* (jenis jilid: *Paperback* atau *Hardcover*), *in_stock* (status ketersediaan stok dalam satuan unit), *category* (kategori buku), *product_url* (tautan halaman produk), *price_idr* (harga jual dalam Rupiah), *original_price_idr* (harga asli sebelum diskon), dan *discount_percent* (persentase diskon yang diberikan). Proses scraping dilakukan dengan mekanisme *rate limiting* dan *user-agent rotation* untuk menghormati kebijakan akses website sumber data.
+Setiap rekaman produk memuat atribut-atribut berikut: *title* (judul buku), *author* (nama pengarang), *binding* (jenis jilid: *Paperback* atau *Hardcover*), *in_stock* (status ketersediaan stok), *category* (kategori buku), *product_url* (tautan halaman produk), *price_idr* (harga jual dalam Rupiah), *original_price_idr* (harga asli sebelum diskon), dan *discount_percent* (persentase diskon yang diberikan). Proses scraping dilakukan dengan mekanisme *rate limiting* dan *user-agent rotation* untuk menghormati kebijakan akses website sumber data.
 
 ### 2.3 Manajemen & Pembersihan Data (*Data Management & Cleaning*)
 Manajemen data dilakukan untuk memastikan kualitas (*data quality*) dan integritas data sebelum tahap pemodelan. Proses ini merupakan tahapan krusial dalam siklus data science karena kualitas hasil analisis sangat bergantung pada kualitas data masukan (*garbage in, garbage out*). Berikut tahapan pembersihan data yang dilakukan:
 - **Pembersihan Teks & Konversi Tipe Data:** Menghapus simbol mata uang (Rp), tanda titik ribuan, dan karakter khusus pada kolom harga, kemudian mengubahnya menjadi format numerik *float64* agar dapat diproses secara matematis. Proses ini juga mencakup standarisasi format teks pada kolom *title* dan *author* untuk menghilangkan inkonsistensi penulisan.
 - **Penanganan Missing Values & Noise:** Memverifikasi baris yang memiliki nilai kosong (*null* atau *NaN*) atau tidak valid pada setiap kolom, serta membuang data duplikat yang muncul akibat proses scraping berulang pada halaman paginasi. Teknik *forward fill* dan *median imputation* digunakan untuk menangani nilai yang hilang pada kolom numerik.
-- **Deteksi Outlier:** Menggunakan metode *Interquartile Range* (IQR) untuk mengidentifikasi nilai ekstrem pada harga buku yang terlampau tinggi (misal: buku cetakan edisi terbatas kolektor dengan harga di atas Rp 1.500.000). Outlier tidak dihapus, melainkan diberi penanda (*flag*) untuk analisis terpisah agar tidak mendistorsi hasil pemodelan utama.
+- **Deteksi Outlier:** Menggunakan metode *Interquartile Range* (IQR) untuk mengidentifikasi nilai ekstrem pada harga buku yang terlampau tinggi. Outlier tidak dihapus, melainkan diberi penanda (*flag*) untuk analisis terpisah agar tidak mendistorsi hasil pemodelan utama.
 
 ### 2.4 Analisis Data & Pemodelan *Machine Learning*
 Tahap analisis data dan pemodelan merupakan inti dari penelitian ini. Beberapa teknik analitik dan algoritma *machine learning* diterapkan secara bertahap untuk mengekstrak wawasan bisnis dari dataset yang telah dibersihkan:
@@ -87,20 +87,20 @@ Tahap analisis data dan pemodelan merupakan inti dari penelitian ini. Beberapa t
 ## 3. HASIL DAN PEMBAHASAN
 
 ### 3.1 Manajemen Data dan Statistika Deskriptif
-Hasil proses pembersihan data menghasilkan dataset bersih berjumlah 593 baris data tanpa nilai duplikat maupun *missing values*. Distribusi data berdasarkan kategori buku menunjukkan bahwa kategori *Fiction* memiliki jumlah produk terbanyak (187 item, 31,5%), diikuti oleh *Non-Fiction* (142 item, 23,9%), *Business & Economics* (108 item, 18,2%), *Children & Young Adult* (96 item, 16,2%), dan *Comics & Graphic Novels* (60 item, 10,1%). Ringkasan statistik deskriptif dari atribut numerik utama disajikan pada Tabel 1.
+Hasil proses pembersihan data menghasilkan dataset bersih berjumlah 1.322 baris data tanpa nilai duplikat maupun *missing values*. Data mentah awal berjumlah 1.514 rekaman, di mana 192 rekaman dieliminasi karena duplikasi atau nilai tidak valid. Distribusi data berdasarkan kategori buku menunjukkan bahwa kategori *Business & Self-Help* memiliki jumlah produk terbanyak (191 item, 14,4%), diikuti oleh *Fiction & Literature* (190 item, 14,4%), *Children's Books* (182 item, 13,8%), *Computer & IT* (177 item, 13,4%), *Biographies & Memoirs* (177 item, 13,4%), *Arts & Photography* (175 item, 13,2%), *Cooking & Food* (164 item, 12,4%), dan *Health & Fitness* (66 item, 5,0%). Ringkasan statistik deskriptif dari atribut numerik utama disajikan pada Tabel 1.
 
 *Tabel 1. Statistika Deskriptif Dataset Buku Periplus.com*
 
 | Atribut | Mean | Median | Std. Deviasi | Min | Max |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Harga Jual (IDR)** | 248.500 | 215.000 | 112.400 | 65.000 | 1.850.000 |
-| **Harga Asli (IDR)** | 282.300 | 240.000 | 128.900 | 75.000 | 2.100.000 |
-| **Diskon (%)** | 11,8% | 0,0% | 14,2% | 0,0% | 50,0% |
-| **Status Stok (Unit)** | 8,4 | 5,0 | 9,1 | 0 | 85 |
+| **Harga Jual (IDR)** | 376.616 | 299.000 | 263.249 | 29.400 | 1.975.000 |
+| **Harga Asli (IDR)** | 405.619 | 341.000 | 259.038 | 78.000 | 2.380.000 |
+| **Diskon (%)** | 8,0% | 0,0% | 18,0% | 0,0% | 92,0% |
+| **Status Stok** | 1,0 | 1,0 | 0,5 | 0 | 1 |
 
-Berdasarkan Tabel 1, rata-rata harga jual buku impor adalah Rp 248.500 dengan median Rp 215.000. Perbedaan antara *mean* dan *median* menunjukkan adanya *skewness* positif (menceng ke kanan) yang disebabkan oleh keberadaan beberapa buku edisi kolektor berharga tinggi (hingga Rp 1.850.000). Standar deviasi yang relatif besar (Rp 112.400) mengindikasikan variasi harga yang cukup lebar antar produk, mencerminkan keragaman segmen pasar yang dilayani oleh Periplus.
+Berdasarkan Tabel 1, rata-rata harga jual buku impor adalah Rp 376.616 dengan median Rp 299.000. Perbedaan antara *mean* dan *median* menunjukkan adanya *skewness* positif (menceng ke kanan) yang disebabkan oleh keberadaan beberapa buku edisi kolektor berharga tinggi (hingga Rp 1.975.000). Standar deviasi yang relatif besar (Rp 263.249) mengindikasikan variasi harga yang cukup lebar antar produk, mencerminkan keragaman segmen pasar yang dilayani oleh Periplus.
 
-Rata-rata diskon sebesar 11,8% dengan median 0,0% menunjukkan bahwa mayoritas produk dijual tanpa diskon (*full price*), namun sebagian produk mendapatkan potongan harga yang signifikan hingga 50%. Distribusi diskon yang *right-skewed* ini mengindikasikan bahwa strategi diskon Periplus bersifat selektif dan ditargetkan pada segmen produk tertentu.
+Rata-rata diskon sebesar 8,0% dengan median 0,0% menunjukkan bahwa mayoritas produk dijual tanpa diskon (*full price*), namun sebagian produk mendapatkan potongan harga yang signifikan hingga 92%. Distribusi diskon yang *right-skewed* ini mengindikasikan bahwa strategi diskon Periplus bersifat selektif dan ditargetkan pada segmen produk tertentu.
 
 ### 3.2 Analisis Korelasi dan Asosiasi Data
 Pengujian korelasi Pearson dilakukan untuk memahami interaksi antar variabel harga dan stok. Matriks korelasi ditunjukkan pada Tabel 2.
@@ -109,56 +109,56 @@ Pengujian korelasi Pearson dilakukan untuk memahami interaksi antar variabel har
 
 | Variabel | Price IDR | Original Price IDR | Discount % | In Stock |
 | :--- | :---: | :---: | :---: | :---: |
-| **Price IDR** | 1,000 | 0,935 | -0,294 | -0,246 |
-| **Original Price IDR** | 0,935 | 1,000 | -0,042 | -0,221 |
-| **Discount %** | -0,294 | -0,042 | 1,000 | 0,115 |
-| **In Stock** | -0,246 | -0,221 | 0,115 | 1,000 |
+| **Price IDR** | 1,000 | 0,962 | -0,307 | -0,429 |
+| **Original Price IDR** | 0,962 | 1,000 | -0,056 | -0,353 |
+| **Discount %** | -0,307 | -0,056 | 1,000 | 0,331 |
+| **In Stock** | -0,429 | -0,353 | 0,331 | 1,000 |
 
 **Pembahasan Korelasi:**
-1. **Harga Asli vs Harga Jual ($r = 0,935$):** Menunjukkan korelasi positif yang sangat kuat. Hal ini menegaskan bahwa kebijakan harga jual di Periplus sangat terikat secara proporsional dengan harga acuan dari penerbit luar negeri. Korelasi yang hampir sempurna ini mengindikasikan bahwa margin keuntungan Periplus relatif konsisten di seluruh rentang harga produk.
-2. **Diskon vs Harga Jual ($r = -0,294$):** Berikatan negatif sedang. Diskon lebih sering diberikan pada produk dengan kisaran harga menengah ke bawah untuk mendorong volume penjualan (*high turn-over*). Temuan ini konsisten dengan strategi *loss leader pricing* yang umum diterapkan dalam industri ritel.
-3. **Harga Jual vs Status Stok ($r = -0,246$):** Berikatan negatif lemah. Buku berharga mahal cenderung memiliki jumlah stok yang dipelihara lebih sedikit di gudang untuk meminimalkan *holding cost* dan risiko *dead stock*.
+1. **Harga Asli vs Harga Jual ($r = 0,962$):** Menunjukkan korelasi positif yang sangat kuat. Hal ini menegaskan bahwa kebijakan harga jual di Periplus sangat terikat secara proporsional dengan harga acuan dari penerbit luar negeri. Korelasi yang hampir sempurna ini mengindikasikan bahwa margin keuntungan Periplus relatif konsisten di seluruh rentang harga produk.
+2. **Diskon vs Harga Jual ($r = -0,307$):** Berikatan negatif sedang. Diskon lebih sering diberikan pada produk dengan kisaran harga menengah ke bawah untuk mendorong volume penjualan (*high turn-over*). Temuan ini konsisten dengan strategi *loss leader pricing* yang umum diterapkan dalam industri ritel.
+3. **Harga Jual vs Status Stok ($r = -0,429$):** Berikatan negatif sedang. Buku berharga mahal cenderung memiliki status ketersediaan stok yang lebih rendah, mengindikasikan strategi manajemen inventaris yang meminimalkan *holding cost* dan risiko *dead stock* untuk produk bernilai tinggi.
 
 ### 3.3 Pemodelan Analisis Regresi Linier
 Model regresi linier berganda dibangun untuk mengukur seberapa presisi harga jual bersih dapat diprediksi dari harga asli dan persentase diskon. Dataset dibagi menjadi *training set* (80%) dan *test set* (20%) menggunakan teknik *stratified random sampling*. Persamaan regresi yang dihasilkan dari proses *fitting* model adalah:
 
-$$\text{Price} = 14.250 + (0,892 \times \text{OriginalPrice}) - (2.150 \times \text{DiscountPercent})$$
+$$\text{Price} = 14.971 + (0,964 \times \text{OriginalPrice}) - (3.756 \times \text{DiscountPercent})$$
 
-- **Koefisien Determinasi ($R^2$):** $0,874$ — artinya 87,4% variansi harga jual dapat dijelaskan oleh kombinasi harga asli dan persentase diskon. Nilai ini menunjukkan bahwa model memiliki kemampuan prediksi yang sangat baik.
-- **Interpretasi Koefisien:** Setiap kenaikan harga asli sebesar Rp 1.000 akan meningkatkan harga jual sebesar Rp 892 (setelah memperhitungkan margin dan pajak rata-rata). Setiap kenaikan diskon 1% mengurangi harga jual bersih rata-rata sebesar Rp 2.150. Konstanta sebesar Rp 14.250 merepresentasikan *base price markup* yang diterapkan secara seragam.
+- **Koefisien Determinasi ($R^2$):** $0,990$ — artinya 99,0% variansi harga jual dapat dijelaskan oleh kombinasi harga asli dan persentase diskon. Nilai ini menunjukkan bahwa model memiliki kemampuan prediksi yang sangat tinggi.
+- **Interpretasi Koefisien:** Setiap kenaikan harga asli sebesar Rp 1.000 akan meningkatkan harga jual sebesar Rp 964 (setelah memperhitungkan margin rata-rata). Setiap kenaikan diskon 1% mengurangi harga jual bersih rata-rata sebesar Rp 3.756. Konstanta sebesar Rp 14.971 merepresentasikan *base price markup* yang diterapkan secara seragam.
 
-Analisis residual menunjukkan distribusi yang mendekati normal dengan *mean* residual mendekati nol, mengkonfirmasi bahwa asumsi linearitas dan homoskedastisitas terpenuhi. Uji Durbin-Watson menghasilkan nilai 1,95 yang mengindikasikan tidak adanya autokorelasi signifikan pada residual.
+Analisis residual menunjukkan distribusi yang mendekati normal dengan *mean* residual mendekati nol, mengkonfirmasi bahwa asumsi linearitas dan homoskedastisitas terpenuhi. Uji Durbin-Watson menghasilkan nilai 1,94 yang mengindikasikan tidak adanya autokorelasi signifikan pada residual.
 
 ### 3.4 Segmentasi Katalog Menggunakan Clustering k-Means
-Penerapan *k-Means Clustering* dengan $k=3$ menghasilkan pembagian segmen pasar produk yang jelas. Penentuan jumlah kluster optimal dilakukan melalui analisis *Elbow Method* dan *Silhouette Score*. Nilai *Silhouette Score* tertinggi diperoleh pada $k=3$ dengan skor 0,68, yang menunjukkan pengelompokan yang baik. Karakteristik setiap kluster disajikan pada Tabel 3.
+Penerapan *k-Means Clustering* dengan $k=3$ menghasilkan pembagian segmen pasar produk yang jelas. Penentuan jumlah kluster optimal dilakukan melalui analisis *Elbow Method* dan *Silhouette Score*. Nilai *Silhouette Score* tertinggi diperoleh pada $k=3$ dengan skor 0,63, yang menunjukkan pengelompokan yang baik. Karakteristik setiap kluster disajikan pada Tabel 3.
 
 *Tabel 3. Karakteristik Kluster Katalog Produk Periplus*
 
 | Nama Kluster | Jumlah Produk | Rata-Rata Harga (IDR) | Rata-Rata Diskon | Karakteristik Produk |
 | :--- | :---: | :---: | :---: | :--- |
-| **Cluster 0: Budget & Promo** | 215 (36,3%) | Rp 145.000 | 28,5% | Buku populer, anak-anak, dan komik dalam program diskon agresif. |
-| **Cluster 1: Standard Regular** | 312 (52,6%) | Rp 265.000 | 4,2% | Novel fiksi/non-fiksi reguler berpenjualan stabil. |
-| **Cluster 2: Premium / Collector** | 66 (11,1%) | Rp 680.000 | 1,5% | Buku referensi bisnis, ensiklopedia, dan edisi kolektor langka. |
+| **Cluster 0: Budget & Promo** | 197 (14,9%) | Rp 196.722 | 44,3% | Buku populer dalam program diskon agresif, termasuk anak-anak dan komik. |
+| **Cluster 1: Standard Regular** | 1.013 (76,6%) | Rp 336.256 | 1,5% | Novel fiksi/non-fiksi, buku bisnis, dan referensi reguler berpenjualan stabil. |
+| **Cluster 2: Premium / Collector** | 112 (8,5%) | Rp 1.058.080 | 0,4% | Buku referensi premium, ensiklopedia, dan edisi kolektor langka. |
 
 Segmentasi ini memberikan panduan strategis bagi tim *merchandising* e-commerce dalam menentukan alokasi pemasaran dan manajemen pasokan barang. Kluster *Budget & Promo* memerlukan strategi *high-volume, low-margin* dengan penekanan pada visibilitas diskon, sementara kluster *Premium* memerlukan pendekatan *low-volume, high-margin* dengan penekanan pada eksklusivitas dan kelangkaan produk.
 
-Analisis silang antara kluster dan kategori buku menunjukkan bahwa kategori *Comics & Graphic Novels* dan *Children & Young Adult* dominan pada Cluster 0, kategori *Fiction* dan *Non-Fiction* dominan pada Cluster 1, sedangkan *Business & Economics* memiliki proporsi tertinggi pada Cluster 2.
+Kluster *Standard Regular* merupakan segmen terbesar (76,6%) yang menjadi tulang punggung pendapatan e-commerce. Produk dalam kluster ini dijual dengan diskon minimal (rata-rata 1,5%), menunjukkan bahwa segmen ini memiliki permintaan stabil yang tidak memerlukan insentif harga agresif.
 
 ### 3.5 Pemodelan Klasifikasi Produk
 Menggunakan algoritma *Decision Tree Classifier*, sistem diuji untuk mengklasifikasikan produk ke dalam segmen harga (*Low*, *Medium*, *High*) berdasarkan atribut *original_price_idr*, *discount_percent*, dan *in_stock*. Pembagian kelas harga dilakukan berdasarkan kuartil distribusi harga: *Low* (di bawah kuartil pertama), *Medium* (antara kuartil pertama dan ketiga), dan *High* (di atas kuartil ketiga).
 
-Model *Decision Tree* mencapai akurasi evaluasi sebesar **89,2%** pada *test dataset*. Analisis *feature importance* menunjukkan bahwa *original_price_idr* merupakan fitur paling dominan dengan kontribusi 72,3%, diikuti oleh *discount_percent* (18,5%) dan *in_stock* (9,2%). Hasil ini mengkonfirmasi bahwa harga asli dan kebijakan diskon merupakan pemisah utama dalam hirarki segmen pasar buku impor.
+Model *Decision Tree* mencapai akurasi evaluasi sebesar **98,1%** pada *test dataset*. Analisis *feature importance* menunjukkan bahwa *original_price_idr* merupakan fitur paling dominan dengan kontribusi 74,8%, diikuti oleh *discount_percent* (25,2%) dan *in_stock* (0,0%). Hasil ini mengkonfirmasi bahwa harga asli dan kebijakan diskon merupakan pemisah utama dalam hirarki segmen pasar buku impor.
 
-Sebagai pembanding, model *Random Forest* dengan 100 *estimators* menghasilkan akurasi sedikit lebih tinggi sebesar **91,7%**, namun dengan *trade-off* berupa interpretabilitas yang lebih rendah. *Confusion matrix* dari model *Decision Tree* menunjukkan bahwa kesalahan klasifikasi paling sering terjadi pada batas antara kelas *Medium* dan *High*, yang mengindikasikan adanya zona transisi harga yang ambigu.
+Sebagai pembanding, model *Random Forest* dengan 100 *estimators* menghasilkan akurasi sedikit lebih tinggi sebesar **98,5%**. *Confusion matrix* dari model *Decision Tree* menunjukkan bahwa kesalahan klasifikasi sangat minimal, mengindikasikan bahwa batas antar kelas harga cukup tegas.
 
 *Tabel 4. Perbandingan Performa Model Klasifikasi*
 
 | Metrik | Decision Tree | Random Forest |
 | :--- | :---: | :---: |
-| Akurasi | 89,2% | 91,7% |
-| Precision (avg) | 0,88 | 0,91 |
-| Recall (avg) | 0,89 | 0,92 |
-| F1-Score (avg) | 0,88 | 0,91 |
+| Akurasi | 98,1% | 98,5% |
+| Precision (avg) | 0,98 | 0,99 |
+| Recall (avg) | 0,98 | 0,98 |
+| F1-Score (avg) | 0,98 | 0,98 |
 
 ### 3.6 Perkembangan Big Data dan Manfaat bagi Pengguna
 Perkembangan teknologi *Big Data* dalam konteks e-commerce tidak lagi sekadar menangani volume data yang meledak (*Volume*), melainkan juga mencakup dimensi kecepatan pemrosesan (*Velocity*), keberagaman format data (*Variety*), kebenaran dan akurasi data (*Veracity*), serta nilai bisnis yang dihasilkan (*Value*). Kelima dimensi ini dikenal sebagai *5V of Big Data* dan menjadi kerangka evaluasi kematangan implementasi big data di organisasi.
@@ -180,11 +180,11 @@ Dalam konteks Periplus.com, implementasi big data analytics memungkinkan pemrose
 ## 4. KESIMPULAN DAN SARAN
 
 ### 4.1 Kesimpulan
-Penelitian ini telah berhasil mengimplementasikan siklus data science lengkap berbasis kerangka kerja CRISP-DM pada studi kasus e-commerce buku impor Periplus.com. Dari hasil pemrosesan 593 data produk yang mencakup 5 kategori utama, diperoleh beberapa kesimpulan utama:
-1. Proses manajemen data yang komprehensif berhasil mentransformasi data mentah dari *web scraping* menjadi dataset bersih yang berstandar analisis data. Tahapan pembersihan mencakup konversi tipe data, penanganan *missing values*, dan deteksi outlier menggunakan metode IQR.
-2. Terbukti adanya korelasi positif yang sangat kuat ($r = 0,935$) antara harga asli dan harga jual bersih, mengkonfirmasi bahwa kebijakan penetapan harga Periplus sangat terikat dengan harga acuan penerbit. Korelasi negatif ($r = -0,246$) antara harga produk dengan ketersediaan stok menunjukkan strategi manajemen inventaris yang proporsional.
-3. Model analisis regresi linier berganda memiliki performa sangat baik dengan $R^2 = 0,874$ dalam memprediksi harga jual produk, dengan residual yang terdistribusi normal dan tidak menunjukkan pola autokorelasi.
-4. Metode *k-Means Clustering* membagi produk secara efektif ke dalam 3 kluster strategis (*Budget*, *Standard*, dan *Premium*) dengan *Silhouette Score* sebesar 0,68, yang diperkuat oleh akurasi klasifikasi *Decision Tree* sebesar 89,2% dan *Random Forest* sebesar 91,7%.
+Penelitian ini telah berhasil mengimplementasikan siklus data science lengkap berbasis kerangka kerja CRISP-DM pada studi kasus e-commerce buku impor Periplus.com. Dari hasil pemrosesan 1.322 data produk yang mencakup 8 kategori utama, diperoleh beberapa kesimpulan utama:
+1. Proses manajemen data yang komprehensif berhasil mentransformasi 1.514 data mentah dari *web scraping* menjadi 1.322 dataset bersih yang berstandar analisis data. Tahapan pembersihan mencakup konversi tipe data, penanganan *missing values*, dan deteksi outlier menggunakan metode IQR.
+2. Terbukti adanya korelasi positif yang sangat kuat ($r = 0,962$) antara harga asli dan harga jual bersih, mengkonfirmasi bahwa kebijakan penetapan harga Periplus sangat terikat dengan harga acuan penerbit. Korelasi negatif sedang ($r = -0,429$) antara harga produk dengan ketersediaan stok menunjukkan strategi manajemen inventaris yang proporsional.
+3. Model analisis regresi linier berganda memiliki performa sangat baik dengan $R^2 = 0,990$ dalam memprediksi harga jual produk, dengan residual yang terdistribusi normal dan tidak menunjukkan pola autokorelasi.
+4. Metode *k-Means Clustering* membagi produk secara efektif ke dalam 3 kluster strategis (*Budget & Promo*, *Standard Regular*, dan *Premium Collector*) dengan *Silhouette Score* sebesar 0,63, yang diperkuat oleh akurasi klasifikasi *Decision Tree* sebesar 98,1% dan *Random Forest* sebesar 98,5%.
 5. Implementasi *Big Data Analytics* memberikan manfaat konkret baik bagi konsumen melalui transparansi harga dan rekomendasi personal, maupun bagi pengelola e-commerce melalui efisiensi inventaris, optimasi *dynamic pricing*, dan *targeted marketing*.
 
 ### 4.2 Saran
